@@ -1,0 +1,44 @@
+.software {
+    padding: 50px 0;
+
+    &__wrap {
+        text-align: center;
+    }
+
+    &__text {
+        color: $secondary-color;
+        opacity: 60%;
+        margin-bottom: 50px;
+        @include b(mobile) {
+            padding: 0 30px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include b(tablet) {
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+
+    &__item {
+        opacity: 60%;
+        transition: $trs;
+        @include b(tablet) {
+            margin-bottom: 50px;
+        }
+
+        &:last-child {
+            @include b(tablet) {
+                margin-bottom: 0;
+            }
+        }
+
+        &:hover {
+            opacity: 100%;
+        }
+    }
+}

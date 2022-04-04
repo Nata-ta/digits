@@ -1,0 +1,47 @@
+.hero {
+    padding: 140px 0 20px;
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 180px;
+        background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
+    }
+
+    &__wrap {
+        position: relative;
+        text-align: center;
+    }
+
+    &__caption {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 18px;
+        color: $secondary-color;
+        margin-bottom: 30px;
+        @include b(mobile) {
+            padding: 0 30px;
+        }
+    }
+
+    &__btn{
+        margin-left: 20px;
+        margin-bottom: 30px;
+        @include b(mobile) {
+            display: block;
+            margin: 0 auto 30px;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+}

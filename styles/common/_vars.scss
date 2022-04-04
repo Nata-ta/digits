@@ -1,0 +1,47 @@
+$main-ff: 'Roboto', Arial, Helvetica, sans-serif;
+$main-fw: 400;
+$main-fz: 16px;
+$main-lh: 1;
+
+$main-color: #1E266D;
+$secondary-color: #455880;
+$blue-color: #3442bd;
+$btn-color: #3751FF;
+$btn-hover-color: #001eea;
+$white-color: #fff;
+$black-color: #000;
+$light-gray: #DFE0EB;
+$pink-color:#FFF9EA;
+$sand: #FED385;
+
+$trs: all .3s;
+
+$mobile-low: 479px;
+$mobile-width: 767px;
+$tablet-width: 1024px;
+$desktop-width: 1366px;
+
+@mixin b($breakpoints) {
+  @if ($breakpoints == desktop) {
+    @media (max-width: #{$desktop-width}) {
+      @content
+      }
+    }
+  @if ($breakpoints == tablet) {
+    @media (max-width: #{$tablet-width}) {
+      @content
+    }
+  } @else if ($breakpoints == mobile) {
+    @media (max-width: #{$mobile-width}) {
+      @content
+    }
+  } @else if ($breakpoints == mobile-sm) {
+    @media (max-width: #{$mobile-low}) {
+      @content
+    }
+  } @else {
+    @media (max-width: $breakpoints + px) {
+      @content
+      }
+    }
+}

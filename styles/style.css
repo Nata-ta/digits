@@ -503,7 +503,7 @@ a {
 }
 
 .users {
-  padding: 200px 0 150px;
+  padding: 100px 0 150px;
 }
 .users__caption {
   max-width: 400px;
@@ -545,8 +545,14 @@ a {
   width: 50%;
   margin: 0 auto;
 }
+@media (max-width: 1024px) {
+  .slick-slider {
+    width: 80%;
+  }
+}
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   color: #3751FF;
   font-size: 30px;
 }
@@ -554,9 +560,19 @@ a {
 .slick-prev {
   left: -50px;
 }
+@media (max-width: 767px) {
+  .slick-prev {
+    left: -32px;
+  }
+}
 
 .slick-next {
   right: -40px;
+}
+@media (max-width: 767px) {
+  .slick-next {
+    right: -32px;
+  }
 }
 
 .slick-dots li button:before {

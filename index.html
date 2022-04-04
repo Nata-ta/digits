@@ -11,7 +11,7 @@
 </head>
 <body>
     <button onclick="topFunc()" id="toTopBtn" title="Go to top">Top</button>
-    <header class="header">
+    <header class="header" id="home">
         <div class="container">
             <div class="header__wrap">
                 <div class="header__logo">
@@ -23,11 +23,11 @@
                 </div>
                 <div class="header__wrap header__wrap-nav">
                     <ul class="header__nav">
-                        <li class="header__item"><a href="#" class="header__item-link">Homepages</a></li>
-                        <li class="header__item"><a href="#" class="header__item-link">Products</a></li>
-                        <li class="header__item"><a href="#" class="header__item-link">Company</a></li>
-                        <li class="header__item"><a href="#" class="header__item-link">Pricing</a></li>
-                        <li class="header__item"><a href="#" class="header__item-link">Blog</a></li>
+                        <li class="header__item"><a href="#home" class="header__item-link">Homepages</a></li>
+                        <li class="header__item"><a href="#products" class="header__item-link">Products</a></li>
+                        <li class="header__item"><a href="#company" class="header__item-link">Company</a></li>
+                        <li class="header__item"><a href="#pricing" class="header__item-link">Pricing</a></li>
+                        <li class="header__item"><a href="#blog" class="header__item-link">Blog</a></li>
                     </ul>
                     <a href="tel:00123456789" class="header__contact">+00 123 456 789</a>
                     <button class="btn header__btn">Contact Us</button>
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </section>
-        <section class="software">
+        <section class="software" id="products">
             <div class="container">
                 <div class="software__wrap">
                     <p class="software__text">Trusted by forward-thinking software teams around the world</p>
@@ -107,7 +107,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="company">
             <div class="container">
                 <h2 class="caption about__caption">Whatever work you do, we're able to help</h2>
                 <div class="about__wrap">
@@ -146,7 +146,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="pricing">
             <div class="container">
                 <h2 class="caption portfolio__caption">Simplicity meets innovative design</h2>
                 <p class="portfolio__text">It's really easy to start using Digits. Install the theme, choose a demo and start designing the future of your business!</p>
@@ -154,7 +154,7 @@
             </div>
         </section>
         <div class="parallax-window" data-parallax="scroll" data-image-src="./img/portfolio/portfolio-bg.png"></div>
-        <section class="users">
+        <section class="users" id="blog">
             <div class="container">
                 <h2 class="caption users__caption">What others are saying</h2>
                 <div class="users__slider">

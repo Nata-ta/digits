@@ -1,5 +1,5 @@
 .users {
-    padding: 200px 0 150px;
+    padding: 100px 0 150px;
 
     &__caption {
         max-width: 400px;
@@ -49,19 +49,32 @@
 .slick-slider {
     width: 50%;
     margin: 0 auto;
+
+    @include b(tablet) {
+        width: 80%;
+    }
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
     color: $btn-color;
     font-size: 30px;
 }
 
 .slick-prev {
     left: -50px;
+
+    @include b(mobile) {
+        left: -32px;
+    }
 }
 
 .slick-next {
     right: -40px;
+
+    @include b(mobile) {
+        right: -32px;
+    }
 }
 
 .slick-dots li button:before {

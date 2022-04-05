@@ -65,7 +65,7 @@
     left: -50px;
 
     @include b(mobile) {
-        left: -32px;
+        left: -36px;
     }
 }
 
@@ -73,7 +73,7 @@
     right: -40px;
 
     @include b(mobile) {
-        right: -32px;
+        right: -26px;
     }
 }
 
